@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Cabin','Poppins',sans-serif;
     font-weight: 600;
+    color: #6C584C;
     box-sizing: border-box;
 }
 
@@ -71,6 +72,11 @@ body{
     border-radius: 2.5em;
     border: solid #6C584C 3px;
     background-color:#DDE5B6 ;
+    cursor: pointer;
+}
+
+.wrapper-box .container button:hover{
+    background-color:#bcbd8b ;
 }
 
 #myVideo{
