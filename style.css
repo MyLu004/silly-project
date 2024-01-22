@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Cabin','Poppins',sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FFECEC ;
+}
+
+.wrapper-box{
+    /*display box*/
+    /*position of the wrapper element [inside]*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    /*sizing*/
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    /* background-color:lightcoral ; */
+
+    /*position of the wrapper*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.wrapper-box.active{
+    display: none;
+}
+
+.wrapper-box .title{
+    /* background-color: yellow; */
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.wrapper-box .container{
+    background-color: #D0EBC8;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 3.5em;
+    border: solid #6C584C 4px;
+}
+
+.wrapper-box .container #myNumber{
+    font-size: 8em;
+    /* background-color: #FFECEC; */
+    width: 100%;
+    
+    text-align: center;
+}
+
+.wrapper-box .container button{
+    font-size: 25px;
+    width: 6em;
+    height: 2em;
+    border-radius: 2.5em;
+    border: solid #6C584C 3px;
+    background-color:#DDE5B6 ;
+}
+
+#myVideo{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    width: 5%;
+    height: 5%;
+    z-index: -2;
+    transition: all 0.5s ease-out;
+}
+
+#myVideo.active{
+    width: 95%;
+    height: 95%;
+    z-index: 99;
+}
